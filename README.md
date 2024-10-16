@@ -16,8 +16,22 @@ Below is a summary of performance comparisons between the original paper and my 
 | Dataset       | Metric           | Paper Result | My Implementation |
 |---------------|------------------|--------------|-------------------|
 | MuJoCo        | [Metric]          | [Value]      | [Value]           |
-| Physionet     | [Metric]          | [Value]      | [Value]           |
+| Physionet     | AUC               | See Table Below | [Value]           |
 | Human Activity| [Metric]          | [Value]      | [Value]           |
+
+### Physionet - AUC Scores (from Table 6 of the paper)
+
+| Method                    | AUC               |
+|---------------------------|-------------------|
+| RNN                       | 0.787 ± 0.014     |
+| RNN-Impute                | 0.764 ± 0.016     |
+| RNN-Decay                 | 0.807 ± 0.003     |
+| RNN GRU-D                 | 0.818 ± 0.008     |
+| RNN-VAE                   | 0.515 ± 0.040     |
+| Latent ODE (RNN encoder)   | 0.781 ± 0.018     |
+| ODE-RNN                   | 0.833 ± 0.009     |
+| Latent ODE (ODE encoder)   | 0.829 ± 0.004     |
+| Latent ODE + Poisson       | 0.826 ± 0.007     |
 
 **Note:** More results to come as experiments progress.
 
