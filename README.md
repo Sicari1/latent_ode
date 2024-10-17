@@ -40,14 +40,16 @@ Below is a summary of performance comparisons between the original paper and my 
 
 In addition to the original models, I am conducting my own experiments using alternative configurations and modifications to test performance. Here is one of the experiment settings used in my reproduction:
 
-Results (up to 50 epochs):
-Epoch 57:
-Classification AUC (TEST): 0.8635
-Test MSE: 0.0036
-Poisson likelihood: 0.0
-Cross-Entropy (CE) loss: 0.0936
-Number of labeled examples: 2400
-Number of examples with mortality 1: 300
+#### Results (up to 50 epochs):
+
+- **Epoch 57**:
+  - Classification AUC (TEST): 0.8635
+  - Test MSE: 0.0036
+  - Poisson likelihood: 0.0
+  - Cross-Entropy (CE) loss: 0.0936
+  - Number of labeled examples: 2400
+  - Number of examples with mortality 1: 300
+
 <p align="center"> <img align="middle" src="./result.png" width="800" /> </p>
 More visualizations and results will be added as I complete additional experiments.
 
