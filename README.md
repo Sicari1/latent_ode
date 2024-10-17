@@ -48,7 +48,7 @@ Poisson likelihood: 0.0
 Cross-Entropy (CE) loss: 0.0936
 Number of labeled examples: 2400
 Number of examples with mortality 1: 300
-<p align="center"> <img align="middle" src="./latent_ode/result.png" width="800" /> </p>
+<p align="center"> <img align="middle" src="./result.png" width="800" /> </p>
 More visualizations and results will be added as I complete additional experiments.
 
 
