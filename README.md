@@ -16,7 +16,7 @@ Below is a summary of performance comparisons between the original paper and my 
 | Dataset       | Metric           | Paper Result | My Implementation |
 |---------------|------------------|--------------|-------------------|
 | MuJoCo        | [Metric]          | [Value]      | [Value]           |
-| Physionet     | AUC               | See Table Below | [Value]           |
+| Physionet     | AUC               | See Table Below | 0.8635           |
 | Human Activity| [Metric]          | [Value]      | [Value]           |
 
 ### Physionet - AUC Scores (from Table 6 of the paper)
@@ -32,8 +32,31 @@ Below is a summary of performance comparisons between the original paper and my 
 | ODE-RNN                   | 0.833 ± 0.009     |
 | Latent ODE (ODE encoder)   | 0.829 ± 0.004     |
 | Latent ODE + Poisson       | 0.826 ± 0.007     |
+| **My Implementation**      | **0.8635**        |
 
 **Note:** More results to come as experiments progress.
+
+### My Experimentation
+
+In addition to the original models, I am conducting my own experiments using alternative configurations and modifications to test performance. Here is one of the experiment settings used in my reproduction:
+
+Results (up to 50 epochs):
+Epoch 57:
+Classification AUC (TEST): 0.8635
+Test MSE: 0.0036
+Poisson likelihood: 0.0
+Cross-Entropy (CE) loss: 0.0936
+Number of labeled examples: 2400
+Number of examples with mortality 1: 300
+<p align="center"> <img align="middle" src="./latent_ode/result.png" width="800" /> </p>
+More visualizations and results will be added as I complete additional experiments.
+
+
+
+
+
+
+
 
 ## Prerequisites
 
