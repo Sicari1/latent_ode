@@ -30,7 +30,7 @@ Below is a summary of performance comparisons between the original paper and my 
 | Enc-Dec RNN-VAE            | 6.514  | 6.408  | 6.305  | 6.100  | 2.378  | 2.135  | 2.021  | 1.782  |
 | Latent ODE (RNN encoder)    | 2.477  | 0.578  | 2.768  | 0.447  | 1.663  | 1.653  | 1.485  | 1.377  |
 | Latent ODE (ODE encoder)    | **0.360**  | **0.295**  | **0.300**  | **0.285**  | **1.441**  | **1.400**  | **1.175**  | **1.258**  |
-| **My Implementation**       | 0.380  | 0.310  | 0.320  | 0.300  | 1.520  | 1.450  | 1.210  | 1.300  |
+| **My Implementation**       | 0.480  | 0.310  | 0.320  | 0.300  | 1.520  | 1.450  | 1.210  | 1.300  |
 
 ### Physionet - AUC Scores (from Table 6 of the paper)
 
@@ -59,7 +59,7 @@ Below is a summary of performance comparisons between the original paper and my 
 | Latent ODE (RNN encoder)   | 0.835 ± 0.010     |
 | ODE-RNN                   | 0.829 ± 0.016     |
 | Latent ODE (ODE encoder)   | **0.846 ± 0.013** |
-| **My Implementation**      | 0.842 ± 0.012     |
+| **My Implementation**      | 0.842             |
 
 **Note:** More results to come as experiments progress.
 
