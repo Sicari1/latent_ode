@@ -19,18 +19,6 @@ Below is a summary of performance comparisons between the original paper and my 
 | Physionet     | AUC               | See Table Below      | 0.8635            |
 | Human Activity| Accuracy          | See Table Below      | See Table Below   |
 
-### MuJoCo - Test Mean Squared Error (MSE) (×10^-2)
-
-| Model                      | Interpolation (% Observed Pts.) | Extrapolation (% Observed Pts.) |
-|----------------------------|----------------------------------|---------------------------------|
-|                            | 10%    | 20%    | 30%    | 50%    | 10%    | 20%    | 30%    | 50%    |
-| Autoreg RNN                | 2.454  | 1.714  | 1.250  | 0.785  | 7.259  | 6.792  | 6.594  | 30.571 |
-| RNN GRU-D                  | 1.968  | 1.421  | 1.134  | 0.748  | 38.130 | 20.041 | 13.049 | 5.833  |
-| ODE-RNN (Ours)             | 1.647  | 1.209  | 0.986  | 0.665  | 13.508 | 31.950 | 15.465 | 26.463 |
-| Enc-Dec RNN-VAE            | 6.514  | 6.408  | 6.305  | 6.100  | 2.378  | 2.135  | 2.021  | 1.782  |
-| Latent ODE (RNN encoder)    | 2.477  | 0.578  | 2.768  | 0.447  | 1.663  | 1.653  | 1.485  | 1.377  |
-| Latent ODE (ODE encoder)    | **0.360**  | **0.295**  | **0.300**  | **0.285**  | **1.441**  | **1.400**  | **1.175**  | **1.258**  |
-| **My Implementation**       | 0.480  | 0.310  | 0.320  | 0.300  | 1.520  | 1.450  | 1.210  | 1.300  |
 
 ### Physionet - AUC Scores (from Table 6 of the paper)
 
@@ -47,19 +35,7 @@ Below is a summary of performance comparisons between the original paper and my 
 | Latent ODE + Poisson       | 0.826 ± 0.007     |
 | **My Implementation**      | **0.8635**        |
 
-### Human Activity - Per-time-point Classification Accuracy
 
-| Method                    | Accuracy          |
-|---------------------------|-------------------|
-| RNN                       | 0.797 ± 0.003     |
-| RNN-Impute                | 0.795 ± 0.008     |
-| RNN-Decay                 | 0.800 ± 0.010     |
-| RNN GRU-D                 | 0.806 ± 0.007     |
-| RNN-VAE                   | 0.343 ± 0.040     |
-| Latent ODE (RNN encoder)   | 0.835 ± 0.010     |
-| ODE-RNN                   | 0.829 ± 0.016     |
-| Latent ODE (ODE encoder)   | **0.846 ± 0.013** |
-| **My Implementation**      | 0.842             |
 
 **Note:** More results to come as experiments progress.
 
