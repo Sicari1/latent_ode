@@ -15,3 +15,4 @@ if __name__ == "__main__":
     # Polynomial Regression 실행 및 시각화
     poly_predictions = fit_polynomial_regression(processed_data)
     plot_results(processed_data, poly_predictions, labels='Polynomial Regression')
+    resnet_experiment(processed_data, hidden_dim=32, epochs=50, lr=0.01, device='cpu')
