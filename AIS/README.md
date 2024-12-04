@@ -32,7 +32,7 @@
 - Multiple models and observation levels can be plotted.
 
 # Project Structure
-.
+```
 ├── trajectory
 │   ├── preprocess.py             # Data preprocessing and sampling
 │   ├── visualization.py          # Trajectory visualization functions
@@ -44,7 +44,7 @@
 │   └── __init__.py               # Package initializer
 ├── main.py                       # Entry point for running experiments
 └── README.md                     # Project documentation
-
+```
 
 # Installation
 ### 1. Clone the repository:
