@@ -1,6 +1,6 @@
 # Trajectory Modeling and Analysis Framework
 
-```python
+
 # Overview
 # This project provides a comprehensive framework for trajectory modeling, prediction, and evaluation using multiple machine learning models, including:
 # - Polynomial Regression
@@ -54,7 +54,7 @@
 #    pip install -r requirements.txt
 
 # Usage
-
+```python
 # 1. Preprocess Data
 from trajectory.preprocess import preprocess_and_sample_by_mmsi
 
@@ -89,6 +89,7 @@ from trajectory.visualization import visualize_results_by_observed_points_and_mo
 visualize_results_by_observed_points_and_model(
     processed_data, poly_results, model_name="PolyReg", observed_points_list=[10, 30, 50]
 )
+```
 
 # Example Workflow
 # 1. Load and preprocess the AIS trajectory data. (Sorry for not giving my AIS data since it is project-private data)
