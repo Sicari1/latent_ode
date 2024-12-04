@@ -32,18 +32,19 @@
 - Multiple models and observation levels can be plotted.
 
 # Project Structure
- .
- ├── trajectory
- │   ├── preprocess.py             # Data preprocessing and sampling
- │   ├── visualization.py          # Trajectory visualization functions
- │   ├── polyreg_experiment.py     # Polynomial Regression implementation
- │   ├── resnet_experiment.py      # ResNet implementation
- │   ├── neural_ode_experiment.py  # Neural ODE implementation
- │   ├── latent_ode_experiment.py  # Latent ODE implementation
- │   ├── evaluation.py             # Model evaluation metrics
- │   └── __init__.py
- ├── main.py                       # Entry point for running experiments
- └── README.md                     # Project documentation
+.
+├── trajectory
+│   ├── preprocess.py             # Data preprocessing and sampling
+│   ├── visualization.py          # Trajectory visualization functions
+│   ├── polyreg_experiment.py     # Polynomial Regression implementation
+│   ├── resnet_experiment.py      # ResNet implementation
+│   ├── neural_ode_experiment.py  # Neural ODE implementation
+│   ├── latent_ode_experiment.py  # Latent ODE implementation
+│   ├── evaluation.py             # Model evaluation metrics
+│   └── __init__.py               # Package initializer
+├── main.py                       # Entry point for running experiments
+└── README.md                     # Project documentation
+
 
 # Installation
 ### 1. Clone the repository:
