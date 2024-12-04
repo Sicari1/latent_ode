@@ -2,7 +2,7 @@
 
 
 # Overview
-### This project provides a comprehensive framework for trajectory modeling, prediction, and evaluation using multiple machine learning models, including:
+## This project provides a comprehensive framework for trajectory modeling using multiple models, including:
 - Polynomial Regression
 - ResNet
 - Neural ODE
