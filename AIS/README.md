@@ -2,56 +2,56 @@
 
 
 # Overview
-# This project provides a comprehensive framework for trajectory modeling, prediction, and evaluation using multiple machine learning models, including:
-# - Polynomial Regression
-# - ResNet
-# - Neural ODE
-# - Latent ODE
+### This project provides a comprehensive framework for trajectory modeling, prediction, and evaluation using multiple machine learning models, including:
+- Polynomial Regression
+- ResNet
+- Neural ODE
+- Latent ODE
 
-# The framework includes modules for data preprocessing, model training, trajectory prediction, and evaluation with various metrics such as MSE, MAE, DTW, and R² scores.
+### The framework includes modules for data preprocessing, model training, trajectory prediction, and evaluation with various metrics such as MSE, MAE, DTW, and R² scores.
 
 # Features
-# 1. Data Preprocessing:
-#    - Trajectory data is preprocessed by sampling points for each unique MMSI.
-#    - Data normalization is applied for consistent processing across models.
+## 1. Data Preprocessing:
+- Trajectory data is preprocessed by sampling points for each unique MMSI.
+- Data normalization is applied for consistent processing across models.
 
-# 2. Models:
-#    - Polynomial Regression: Simple polynomial fitting for trajectory prediction.
-#    - ResNet: Deep residual networks for sequence prediction.
-#    - Neural ODE: Continuous-time models for trajectory prediction.
-#    - Latent ODE: Advanced ODE-based latent variable models for irregularly sampled trajectories.
+## 2. Models:
+- Polynomial Regression: Simple polynomial fitting for trajectory prediction.
+- ResNet: Deep residual networks for sequence prediction.
+- Neural ODE: Continuous-time models for trajectory prediction.
+- Latent ODE: Advanced ODE-based latent variable models for irregularly sampled trajectories.
 
-# 3. Evaluation Metrics:
-#    - Mean Squared Error (MSE)
-#    - Mean Absolute Error (MAE)
-#    - Dynamic Time Warping (DTW)
-#    - Coefficient of Determination (R²)
+## 3. Evaluation Metrics:
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- Dynamic Time Warping (DTW)
+- Coefficient of Determination (R²)
 
-# 4. Visualization:
-#    - Trajectory data and model predictions are visualized for easy comparison.
-#    - Multiple models and observation levels can be plotted.
+## 4. Visualization:
+- Trajectory data and model predictions are visualized for easy comparison.
+- Multiple models and observation levels can be plotted.
 
 # Project Structure
-# .
-# ├── trajectory
-# │   ├── preprocess.py             # Data preprocessing and sampling
-# │   ├── visualization.py          # Trajectory visualization functions
-# │   ├── polyreg_experiment.py     # Polynomial Regression implementation
-# │   ├── resnet_experiment.py      # ResNet implementation
-# │   ├── neural_ode_experiment.py  # Neural ODE implementation
-# │   ├── latent_ode_experiment.py  # Latent ODE implementation
-# │   ├── evaluation.py             # Model evaluation metrics
-# │   └── __init__.py
-# ├── main.py                       # Entry point for running experiments
-# └── README.md                     # Project documentation
+ .
+ ├── trajectory
+ │   ├── preprocess.py             # Data preprocessing and sampling
+ │   ├── visualization.py          # Trajectory visualization functions
+ │   ├── polyreg_experiment.py     # Polynomial Regression implementation
+ │   ├── resnet_experiment.py      # ResNet implementation
+ │   ├── neural_ode_experiment.py  # Neural ODE implementation
+ │   ├── latent_ode_experiment.py  # Latent ODE implementation
+ │   ├── evaluation.py             # Model evaluation metrics
+ │   └── __init__.py
+ ├── main.py                       # Entry point for running experiments
+ └── README.md                     # Project documentation
 
 # Installation
-# 1. Clone the repository:
-#    git clone https://github.com/your-repo/trajectory-modeling.git
-#    cd trajectory-modeling
+### 1. Clone the repository:
+git clone https://github.com/your-repo/trajectory-modeling.git
+cd trajectory-modeling
 
-# 2. Install required Python packages:
-#    pip install -r requirements.txt
+### 2. Install required Python packages:
+pip install -r requirements.txt
 
 # Usage
 ```python
@@ -92,40 +92,39 @@ visualize_results_by_observed_points_and_model(
 ```
 
 # Example Workflow
-# 1. Load and preprocess the AIS trajectory data. (Sorry for not giving my AIS data since it is project-private data)
-# 2. Run experiments with different models.
-# 3. Evaluate the performance using multiple metrics.
-# 4. Visualize the predicted trajectories and compare model outputs.
+1. Load and preprocess the AIS trajectory data. (Sorry for not giving my AIS data since it is project-private data)
+2. Run experiments with different models.
+3. Evaluate the performance using multiple metrics.
+4. Visualize the predicted trajectories and compare model outputs.
 
 
 # Evaluation Metrics
-# The project uses the following metrics to evaluate predicted trajectories against ground truth:
-# - MSE (Mean Squared Error): Measures the average squared difference between predicted and actual coordinates.
-# - MAE (Mean Absolute Error): Measures the average absolute difference.
-# - DTW (Dynamic Time Warping): Measures the similarity between two trajectories.
-# - R² (Coefficient of Determination): Indicates how well the predictions match the actual values.
+The project uses the following metrics to evaluate predicted trajectories against ground truth:
+- MSE (Mean Squared Error): Measures the average squared difference between predicted and actual coordinates.
+- MAE (Mean Absolute Error): Measures the average absolute difference.
+- DTW (Dynamic Time Warping): Measures the similarity between two trajectories.
+- R² (Coefficient of Determination): Indicates how well the predictions match the actual values.
 
 
 # Dependencies
-# - Python 3.8+
-# - Required libraries:
-#     - numpy
-#     - pandas
-#     - matplotlib
-#     - scikit-learn
-#     - torch
-#     - torchdiffeq
-#     - fastdtw
-
-# Install dependencies with:
-# pip install -r requirements.txt
+- Python 3.8+
+- Required libraries:
+    - numpy
+    - pandas
+    - matplotlib
+    - scikit-learn
+    - torch
+    - torchdiffeq
+    - fastdtw
+### Install dependencies with:
+pip install -r requirements.txt
 
 
 # Future Work
-# - Implement Physics-informed NN and Physics-informed ODE and Neural Flow models for comparison.
-# - Explore hyperparameter optimization for Neural ODE and Latent ODE models.
+- Implement Physics-informed NN and Physics-informed ODE and Neural Flow models for comparison.
+- Explore hyperparameter optimization for Neural ODE and Latent ODE models.
 
 # Contributors
-# - Seongjin Kim - https://github.com/Sicari1
+- Seongjin Kim - https://github.com/Sicari1
 
 
