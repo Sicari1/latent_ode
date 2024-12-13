@@ -17,7 +17,6 @@
 ## 2. Models:
 - Polynomial Regression: Simple polynomial fitting for trajectory prediction.
 - ResNet: Deep residual networks for sequence prediction.
-- Neural ODE: Continuous-time models for trajectory prediction.
 - Latent ODE: Advanced ODE-based latent variable models for irregularly sampled trajectories.
 
 ## 3. Evaluation Metrics:
