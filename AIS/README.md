@@ -5,7 +5,6 @@
 ## This project provides a comprehensive framework for trajectory modeling using multiple models, including:
 - Polynomial Regression
 - ResNet
-- Neural ODE
 - Latent ODE
 
 ### The framework includes modules for data preprocessing, model training, trajectory prediction, and evaluation with various metrics such as MSE, MAE, DTW, and R² scores.
